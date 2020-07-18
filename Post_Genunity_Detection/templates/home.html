@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Catastrophe geniunity post predictor</title>
+<!-- <link rel="stylesheet" type="text/css" href="../static/css/styles.css"> -->
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+</head>
+<body style="background-color: #d8d8ff">
+<center style="margin-top: 177px;">
+
+<header>
+<div class="container">
+<h2 style="font-family: 'Courgette', cursive; font-size: 2.5em;color: brown;">Catastrophe post genuinity predictor</h2><br>
+
+</div>
+</header>
+
+<div class="ml-container">
+
+<form action="{{ url_for('predict')}}" method="POST">
+<p style="font-size: 1.5em; color:#5b5bd8;"><i>Enter Your Post Here</i></p>
+
+<textarea name="message" rows="4" cols="50"></textarea>
+<br/><br>
+
+<input type="submit" class="btn-info" value="Predict" style="font-size: 1.2em;
+    border-radius: 10px;">
+</form>
+</div>
+</center>
+</body>
+</html>
